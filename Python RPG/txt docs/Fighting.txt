@@ -1,0 +1,15 @@
+Fight sequence:
+hero.attack(enemy)
+enemy.attack(hero)
+
+hero.health_bar.draw()
+enemy.health_bar.draw()
+
+if hero.health <= 0:
+  print(f"You were defeated by {enemy.name}, and have lost the game.")
+  break
+elif enemy.health <= 0:
+  print(f"You defeated the {enemy.name}!")
+  input("Press enter to continue.")
+else:
+  input()

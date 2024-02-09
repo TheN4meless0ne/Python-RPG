@@ -1,0 +1,11 @@
+Item Pickup:
+player.equip(ITEM_NAME)
+
+General item picup message:
+print(f"{self.name} equipped a(n) {self.weapon.name}!")
+
+Item Drop:
+player.drop()
+
+General item drop message:
+print(f"{self.name} dropped the {self.weapon.name}!")

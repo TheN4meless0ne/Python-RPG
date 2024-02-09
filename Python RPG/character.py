@@ -24,7 +24,7 @@ class Character:
 
 
 # ------------ subclass setup ------------
-class Hero(Character):
+class Player(Character):
     def __init__(self,
                  name: str,
                  health: int
@@ -36,15 +36,13 @@ class Hero(Character):
 
     def equip(self, weapon) -> None:
         self.weapon = weapon
-        print(f"{self.name} equipped a(n) {self.weapon.name}!")
 
     def drop(self) -> None:
-        print(f"{self.name} dropped the {self.weapon.name}!")
         self.weapon = self.default_weapon
 
 
 # ------------ subclass setup ------------
-class Enemy(Character):
+class Prison_Guard(Character):
     def __init__(self,
                  name: str,
                  health: int,
