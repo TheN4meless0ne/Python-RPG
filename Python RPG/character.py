@@ -3,7 +3,7 @@ from weapon import fists
 from health_bar import HealthBar
 
 
-# ------------ parent class setup ------------
+# ------------ class setup ------------
 class Character:
     def __init__(self,
                  name: str,
@@ -26,9 +26,10 @@ class Character:
 # ------------ subclass setup ------------
 class Player(Character):
     def __init__(self,
-                 name: str,
-                 health: int
-                 ) -> None:
+                name: str,
+                health: int,
+                weapon
+                ) -> None:
         super().__init__(name=name, health=health)
 
         self.default_weapon = self.weapon
@@ -44,10 +45,10 @@ class Player(Character):
 # ------------ subclass setup ------------
 class Prison_Guard(Character):
     def __init__(self,
-                 name: str,
-                 health: int,
-                 weapon,
-                 ) -> None:
+                name: str,
+                health: int,
+                weapon,
+                ) -> None:
         super().__init__(name=name, health=health)
         self.weapon = weapon
 

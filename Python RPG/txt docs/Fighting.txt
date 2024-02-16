@@ -1,11 +1,11 @@
 Fight sequence:
-hero.attack(enemy)
-enemy.attack(hero)
+player.attack(enemy)
+enemy.attack(player)
 
-hero.health_bar.draw()
+player.health_bar.draw()
 enemy.health_bar.draw()
 
-if hero.health <= 0:
+if player.health <= 0:
   print(f"You were defeated by {enemy.name}, and have lost the game.")
   break
 elif enemy.health <= 0:
