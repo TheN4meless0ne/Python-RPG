@@ -14,7 +14,7 @@ fists = weapon(name="Fists",
 
 rusty_sword = weapon(name="Rusty Sword",
                     weapon_type="sword",
-                    damage= 12,
+                    damage= 13,
                     value= 1)
 
 rock = weapon(name="Rock",
